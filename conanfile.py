@@ -7,7 +7,7 @@ class SobjectizerConan(ConanFile):
     version = "5.5.23"
 
     license = "BSD 3-Clause"
-    url = "https://bitbucket.org/sobjectizerteam/conan-so5"
+    url = "https://github.com/Stiffstream/sobjectizer-conan"
 
     description = (
             "A small framework for simplification of development of "
