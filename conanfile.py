@@ -46,4 +46,4 @@ class SobjectizerConan(ConanFile):
         self.copy("*.so", dst="lib", keep_path=False)
         self.copy("*.dylib", dst="lib", keep_path=False)
         self.copy("*.a", dst="lib", keep_path=False)
-
+        self.copy("license*", src=self.source_subfolder, dst="licenses",  ignore_case=True, keep_path=False)
