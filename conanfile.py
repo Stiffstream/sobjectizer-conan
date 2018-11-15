@@ -39,8 +39,8 @@ class SobjectizerConan(ConanFile):
         cmake.install()
 
     def package(self):
-        self.copy("*.h", dst="include", src=self.source_subfolder + "/dev")
-        self.copy("*.hpp", dst="include", src=self.source_subfolder + "/dev")
+        self.copy("*.hpp", dst="include/so_5", src=self.source_subfolder + '/dev/so_5')
+        self.copy("*.hpp", dst="include/timertt", src=self.source_subfolder + '/dev/timertt')
         self.copy("*.dll", dst="bin", keep_path=False)
         self.copy("*.lib", dst="lib", keep_path=False)
         self.copy("*.so", dst="lib", keep_path=False)
