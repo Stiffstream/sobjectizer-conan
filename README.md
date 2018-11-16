@@ -45,4 +45,4 @@ target_link_libraries(your_target sobjectizer::SharedLib) # Or sobjectizer::Stat
 # Some Notes
 If you have any questions about SObjectizer feel free to ask us via `info at stiffstream dot com`.
 
-If you have some problems with SObjectizer or this conan-recipe please open an [issue](https://github.com/Stiffstream/sobjectizer-conan-example/issues).
+If you have some problems with SObjectizer or this conan-recipe please open an [issue](https://github.com/Stiffstream/sobjectizer-conan/issues).
