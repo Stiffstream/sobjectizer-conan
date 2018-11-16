@@ -1,5 +1,5 @@
 # sobjectizer-conan
-This is Conan package for [SObjectizer](https://stiffstream.com/en/products/sobjectizer.html).
+This is Conan package for [SObjectizer](https://stiffstream.com/en/products/sobjectizer.html) framework.
 
 # How To Use
 
@@ -8,7 +8,7 @@ To use SObjectizer via Conan it is necessary to do the following steps:
 1. Add the corresponding remote to your conan:
 
 ```bash
-conan remote add sobjectizer https://api.bintray.com/conan/stiffstream/sobjectizer
+conan remote add stiffstream https://api.bintray.com/conan/stiffstream/public
 ```
 
 2. Add SObjectizer to `conanfile.txt` of your project:
