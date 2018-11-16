@@ -3,6 +3,8 @@ This is Conan package for [SObjectizer](https://stiffstream.com/en/products/sobj
 
 # How To Use
 
+## Installing Via Conan
+
 To use SObjectizer via Conan it is necessary to do the following steps:
 
 1. Add the corresponding remote to your conan:
@@ -25,6 +27,19 @@ sobjectizer:shared=False
 3. Install dependencies for your project:
 ```bash
 conan install SOME_PATH --build=missing
+```
+
+## Adding SObjectizer To Your CMakeLists.txt
+
+Please note that SObjectizer should be added to your CMakeLists.txt via `find_package` command:
+```cmake
+...
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
+find_package(sobjectizer)
+...
+target_link_libraries(your_target sobjectizer::SharedLib) # Or sobjectizer::StaticLib
 ```
 
 # Some Notes
