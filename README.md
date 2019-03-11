@@ -16,7 +16,7 @@ conan remote add stiffstream https://api.bintray.com/conan/stiffstream/public
 2. Add SObjectizer to `conanfile.txt` of your project:
 ```
 [requires]
-sobjectizer/5.5.24.2@stiffstream/stable
+sobjectizer/5.5.24.3@stiffstream/stable
 ```
 It also may be necessary to specify `shared` option for SObjectizer. For example, for build SObjectizer as a static library:
 ```
