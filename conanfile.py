@@ -4,7 +4,7 @@ import os
 
 class SobjectizerConan(ConanFile):
     name = "sobjectizer"
-    version = "5.5.24.4"
+    version = "5.6.0"
 
     license = "BSD 3-Clause"
     url = "https://github.com/Stiffstream/sobjectizer-conan"
@@ -23,7 +23,7 @@ class SobjectizerConan(ConanFile):
     source_subfolder = "sobjectizer"
 
     def source(self):
-        source_url = "https://sourceforge.net/projects/sobjectizer/files/sobjectizer/SObjectizer%20Core%20v.5.5"
+        source_url = "https://bitbucket.org/sobjectizerteam/sobjectizer/downloads"
         tools.get("{0}/so-{1}.zip".format(source_url, self.version))
         extracted_dir = "so-" + self.version
         os.rename(extracted_dir, self.source_subfolder)
@@ -40,7 +40,6 @@ class SobjectizerConan(ConanFile):
 
     def package(self):
         self.copy("*.hpp", dst="include/so_5", src=self.source_subfolder + '/dev/so_5')
-        self.copy("*.hpp", dst="include/timertt", src=self.source_subfolder + '/dev/timertt')
         self.copy("*.dll", dst="bin", keep_path=False)
         self.copy("*.lib", dst="lib", keep_path=False)
         self.copy("*.so", dst="lib", keep_path=False)
