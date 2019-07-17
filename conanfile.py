@@ -4,7 +4,7 @@ import os
 
 class SobjectizerConan(ConanFile):
     name = "sobjectizer"
-    version = "5.6.0.1"
+    version = "5.6.0.2"
 
     license = "BSD 3-Clause"
     url = "https://github.com/Stiffstream/sobjectizer-conan"
